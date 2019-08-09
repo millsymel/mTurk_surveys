@@ -1,0 +1,97 @@
+<!-- You must include this JavaScript file -->
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+
+<!-- For the full list of available Crowd HTML Elements and their input/output documentation,
+      please refer to https://docs.aws.amazon.com/sagemaker/latest/dg/sms-ui-template-reference.html -->
+
+<!-- You must include crowd-form so that your task submits answers to MTurk -->
+<crowd-form answer-format="flatten-objects">
+
+  <crowd-instructions link-text="View instructions" link-type="button">
+    <short-summary>
+      <p>Our company is trying to name some of the buttons on our website. Please let us know which of these names makes the most sense in regards to their corresponding action</p>
+    </short-summary>
+
+    <detailed-instructions>
+      <h3>Instructions</h3>
+      <p>Additional Information: Our company builds internal websites for companies. We often build material around events and activities for employees and employee groups. We're trying to decide button names for a company that organizes employees based on activities and associations (e.g. location, department, women in tech)</p>
+    </detailed-instructions>
+
+    <!-- <positive-example>
+      <p>Provide an example of a good answer here</p>
+      <p>Explain why it's a good answer</p>
+    </positive-example>
+
+    <negative-example>
+      <p>Provide an example of a bad answer here</p>
+      <p>Explain why it's a bad answer</p>
+    </negative-example> -->
+  </crowd-instructions>
+  
+
+
+  <!-- <div>
+    <p>Check this box if you like birds</p>
+    <crowd-checkbox name="likeBirds" checked="true" required></crowd-checkbox>
+  </div> --> 
+
+  <!-- <div>
+    <p>Write a short essay describing your favorite bird</p>
+    <crowd-text-area name="essay" rows="4" placeholder="Lorem ipsum..." required></crowd-text-area>
+  </div> -->
+  
+ <head>
+<title>multiple-choice quiz form</title>
+</head>
+
+<!-- Check the answer to each multiple-coice question that you like the best: --> 
+
+<P>1. Which of these names would you most likely click?<BR>
+<input type="radio" name="Which of these names would you most likely click?" value="Volunteer Communities">Volunteer Communities<BR>
+<input type="radio" name="Which of these names would you most likely click?" value="Communities">Communities<BR>
+<input type="radio" name="Which of these names would you most likely click?" value="Volunteer Groups">Volunteer Groups<BR>
+<input type="radio" name="Which of these names would you most likely click?" value="Groups">Groups<BR>
+</p>
+
+<P>2. Which of these names would get you to sign up for an volunteer event?<BR>
+<input type="radio" name="Which of these names would get you to sign up for an volunteer event?" value="Volunteer Communities">Volunteer Communities<BR>
+<input type="radio" name="Which of these names would get you to sign up for an volunteer event?" value="Communities">Communities<BR>
+<input type="radio" name="Which of these names would get you to sign up for an volunteer event?" value="Volunteer Groups">Volunteer Groups<BR>
+<input type="radio" name="Which of these names would get you to sign up for an volunteer event?" value="Groups">Groups<BR>
+</p>
+
+<P>3. Which of these names would have information on your team's activities?<BR>
+<input type="radio" name="Which of these names would have information on your team's activities?" value="Volunteer Communities">Volunteer Communities<BR>
+<input type="radio" name="Which of these names would have information on your team's activities?" value="Communities">Communities<BR>
+<input type="radio" name="Which of these names would have information on your team's activities?" value="Volunteer Groups">Volunteer Groups<BR>
+<input type="radio" name="Which of these names would have information on your team's activities?" value="Groups">Groups<BR>
+</p>
+
+
+  <div>
+    <p>On a scale of 1-10, how much do you like the name 'Volunteer Communities'?</p>
+    <crowd-slider name="howMuchvolunteercommunities" min="1" max="10" step="1" pin="true" required></crowd-slider>
+  </div>
+  
+  <div>
+    <p>On a scale of 1-10, how much do you like the name 'Communities'?</p>
+    <crowd-slider name="howMuchcommunities" min="1" max="10" step="1" pin="true" required></crowd-slider>
+  </div>
+  
+  <div>
+    <p>On a scale of 1-10, how much do you like the name 'Volunteer Groups'?</p>
+    <crowd-slider name="howMuchvolunteergroups" min="1" max="10" step="1" pin="true" required></crowd-slider>
+  </div>
+  
+  <div>
+    <p>On a scale of 1-10, how much do you like the name 'Groups'?</p>
+    <crowd-slider name="howMuchgroups" min="1" max="10" step="1" pin="true" required></crowd-slider>
+  </div>
+<br>
+<br>
+<br>
+<br>
+</form>
+</body>
+
+</crowd-form>
